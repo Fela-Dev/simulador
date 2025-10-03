@@ -36,5 +36,23 @@ namespace simulador
             formMantenimientoProvedores.ShowDialog();
             this.Show();
         }
+
+        private void ingresoProductosAlmacenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCompraProductos formCompraProductos = new FormCompraProductos();
+            this.Hide();
+            formCompraProductos.ShowDialog();
+            this.Show();
+
+
+        }
+
+        private void mantenimientoProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormMantenimientoProductos formMantenimientoProductos = new FormMantenimientoProductos();
+            this.Hide();
+            formMantenimientoProductos.ShowDialog();
+            this.Show();
+        }
     }
 }

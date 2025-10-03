@@ -1,27 +1,26 @@
-﻿using Entities;
+﻿using ConexionServidor;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
-using System.Windows.Forms;
-using ConexionServidor;
+using System.Threading.Tasks;
+
 namespace GestorJSON
 {
-    public class RegistroVentaJSON
+    public class CompraProductoJSON
     {
         public void GenerarJSON(List<object> data, List<Producto> listaP)
         {
             // Crear el diccionario principal
             var compraDict = new Dictionary<string, object>
             {
-                { "op_code", 5 },
-                { "Id_cliente", data[0] },
-                { "NumeroCompra", data[1] },
-                { "Fecha", data[2] },
-                { "NumeroTarjeta", data[3] },
-                { "FechaVencimiento", data[4] },
-                { "CodigoTarjeta", data[5] },
-                { "Total", data[6] }
+                { "op_code", 7 },
+                { "NumeroCompra", data[0] },
+                { "Fecha", data[1] },
+                { "CedulaJuridica", data[2] }
+                
             };
 
             // Crear la lista de productos
@@ -33,7 +32,7 @@ namespace GestorJSON
                     { "Codigo", p.codigo },
                     { "Cantidad", p.cantidad }
                 };
-                        listaProductos.Add(producto);
+                listaProductos.Add(producto);
             }
 
             // Agregar la lista de productos al diccionario principal

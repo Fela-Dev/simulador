@@ -31,9 +31,10 @@
             menuStrip1 = new MenuStrip();
             mantenimientoToolStripMenuItem = new ToolStripMenuItem();
             mantenimientoClientesToolStripMenuItem = new ToolStripMenuItem();
-            registroVentaToolStripMenuItem = new ToolStripMenuItem();
             mantToolStripMenuItem = new ToolStripMenuItem();
             ingresoProductosAlmacenToolStripMenuItem = new ToolStripMenuItem();
+            registroVentaToolStripMenuItem = new ToolStripMenuItem();
+            mantenimientoProductosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             // 
             // mantenimientoToolStripMenuItem
             // 
-            mantenimientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mantenimientoClientesToolStripMenuItem, mantToolStripMenuItem });
+            mantenimientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mantenimientoClientesToolStripMenuItem, mantToolStripMenuItem, mantenimientoProductosToolStripMenuItem });
             mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             mantenimientoToolStripMenuItem.Size = new Size(106, 20);
             mantenimientoToolStripMenuItem.Text = "Mantenimientos";
@@ -59,13 +60,6 @@
             mantenimientoClientesToolStripMenuItem.Size = new Size(218, 22);
             mantenimientoClientesToolStripMenuItem.Text = "Mantenimiento Clientes";
             mantenimientoClientesToolStripMenuItem.Click += mantenimientoClientesToolStripMenuItem_Click;
-            // 
-            // registroVentaToolStripMenuItem
-            // 
-            registroVentaToolStripMenuItem.Name = "registroVentaToolStripMenuItem";
-            registroVentaToolStripMenuItem.Size = new Size(94, 20);
-            registroVentaToolStripMenuItem.Text = "Registro Venta";
-            registroVentaToolStripMenuItem.Click += registroVentaToolStripMenuItem_Click;
             // 
             // mantToolStripMenuItem
             // 
@@ -79,6 +73,21 @@
             ingresoProductosAlmacenToolStripMenuItem.Name = "ingresoProductosAlmacenToolStripMenuItem";
             ingresoProductosAlmacenToolStripMenuItem.Size = new Size(173, 20);
             ingresoProductosAlmacenToolStripMenuItem.Text = "Ingreso Productos (Almacen)";
+            ingresoProductosAlmacenToolStripMenuItem.Click += ingresoProductosAlmacenToolStripMenuItem_Click;
+            // 
+            // registroVentaToolStripMenuItem
+            // 
+            registroVentaToolStripMenuItem.Name = "registroVentaToolStripMenuItem";
+            registroVentaToolStripMenuItem.Size = new Size(94, 20);
+            registroVentaToolStripMenuItem.Text = "Registro Venta";
+            registroVentaToolStripMenuItem.Click += registroVentaToolStripMenuItem_Click;
+            // 
+            // mantenimientoProductosToolStripMenuItem
+            // 
+            mantenimientoProductosToolStripMenuItem.Name = "mantenimientoProductosToolStripMenuItem";
+            mantenimientoProductosToolStripMenuItem.Size = new Size(218, 22);
+            mantenimientoProductosToolStripMenuItem.Text = "Mantenimiento Productos";
+            mantenimientoProductosToolStripMenuItem.Click += mantenimientoProductosToolStripMenuItem_Click;
             // 
             // FormPrincipal
             // 
@@ -104,5 +113,6 @@
         private ToolStripMenuItem registroVentaToolStripMenuItem;
         private ToolStripMenuItem mantToolStripMenuItem;
         private ToolStripMenuItem ingresoProductosAlmacenToolStripMenuItem;
+        private ToolStripMenuItem mantenimientoProductosToolStripMenuItem;
     }
 }
